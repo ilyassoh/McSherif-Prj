@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+    background-image: url("Black\ pattern.jpg");
+}
+h1,h3,th,p,td
+{
+color: white;
+
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-items{
+  display: flex;
+  align-items: center;
+}
+
+/* ................................SearchBox................. */
+
+.search{
+  width: 400px;
+  display: flex;
+}
+
+.search-box{
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  text-transform: capitalize;
+  background: none;
+  color: #a9a9a9;
+  outline: none;
+}
+
+.search-btn{
+  width: 20%;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #383838;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+  color: #a9a9a9;
+}
+
+/* ................................nav................. */
+nav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 100%;
+  width: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 40%;
+  height: auto;
+}
+
+/* ...................pack.......................... */
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content .pack{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.content .pack .text{ 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.content .pack .text p{ 
+  margin-top: 5rem;
+}
+.content .pack .text h1{ 
+  color: #d1a461;
+}
+/* ......................footer.................. */
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #ff7720;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ff7720;
+
+}
+footer h1 {
+  margin: 20px;
+  color: hsl(168, 34%, 23%);
+  font-family: Trebuchet MS;
+}
+footer .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction:row;
+  margin: 20px;
+  
+}
+footer .menu a{
+  text-decoration: none;
+  color :hsl(168, 34%, 23%) ;
+  margin: 0 20px;
+}
+footer .menu a:hover{
+  color :hsla(0, 0%, 100%, 0.692) ;
+}
+footer .social a{
+  margin: 20px;
+  margin: 0 10px;
+}
+footer .social {
+  margin-top: 40px;
+  color: #ff7720;
+}
+.copyright
+{
+  color: hsl(168, 34%, 23%) ;
+}
+.loc
+{
+  text-align: left;
+}

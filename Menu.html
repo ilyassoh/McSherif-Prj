@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="Menu_Style.css">
+  <link rel="stylesheet" href="png/css/all.css">
+
+  <script src="menu.js"> </script>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="./Sherif.png" alt="logo">
+    </div>
+    <table cellspacing="30" align="center">
+      <tr>
+        <th class="link-item"><a href="#home" class="link">Home</a></th>
+        <th class="link-item"><a href="Menu.html" class="link">Menu</a></th>
+        <th class="link-item"><a href="#footer" class="link">contact</a></th>
+        <th class="link-item"><a href="#propose" class="link">A propos</a></th>
+      </tr>
+    </table>
+    <table cellspacing="10" align="right">
+      <tr>
+        <td> <input type="text" class="search-box" placeholder="search brand, product">
+          <button class="search-btn" style=background-color:#a9a9a9>search</button>
+        </td>
+
+        <td> <a href="#"><img src="Black icon account.png" alt="user" width="30" height="30"></a></td>
+
+        <td> <a href="#"><img src="Black icon shopping.png" alt="cart" width="30" height="30"></a></td>
+      </tr>
+    </table>
+
+  </nav>
+
+  <!------------------------------- Food Menu Categorie ---------------------------->
+
+  <div class="wrapper" id="all">
+
+    <div class="title" id="title">
+      <button class="categorie" id="pizza" onclick="listpizza()"> <i class="fas fa-pizza-slice"></i> <span>Pizza</span>
+      </button>
+      <button class="categorie" id="tacos" onclick="listtacos()"><i class="fas fa-taco"></i> <span>Tacos</span>
+      </button>
+      <button class="categorie" id="burger" onclick="listburger()"><i class="fas fa-hamburger"></i> <span>Burger</span>
+      </button>
+      <button class="categorie" id="burger" onclick="listpanini()"><i class="fas fa-burrito"></i> <span>Panini</span>
+      </button>
+      <button class="categorie" id="burger" onclick="listpasticcio()"><i class="fas fa-pie"></i> <span>Pasticcio</span>
+      </button>
+      <button class="categorie" id="burger" onclick="listsalade()"><i class="fas fa-salad"></i> <span>Salade</span>
+      </button>
+    </div>
+
+    <!------------------------------ Pizza Menu------------------------------>
+
+    <div class="menu" id="menu_pizza">
+
+      <div class="single-menu">
+        <img src="image/Pizza4Fromages.jpg" alt="Pizza4Fromages">
+        <div class="menu-content">
+          <h4>Pizza 4 Fromages <span>30 dh</span></h4>
+          <p>Mozzarella, Comte rape, Roquefort, Gruyere rape, Tomate.</p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/PizzaFruitdeMer.jpg" alt="Pizza Fruit de Mer">
+        <div class="menu-content">
+          <h4>Pizza Fruit de Mer <span>30 dh</span></h4>
+          <p>Crevettes, Calamars, moules, Souce tomate, Mozzarella.</p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/pizza-vegetarienne.jpg" alt="pizza vegetarienne">
+        <div class="menu-content">
+          <h4>pizza vegetarienne<span>30 dh</span></h4>
+          <p>Courgette, Poivron, Tomate serise, Olives vert, Mozzarella.</p>
+        </div>
+      </div>
+      <div class="single-menu">
+        <img src="image/pizza-royale.jpg" alt="pizza-royale">
+        <div class="menu-content">
+          <h4>pizza royale <span>30 dh</span></h4>
+          <p>Jambo, Tomates, Mozzarella, Champignon, Olives noires, Thym.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!------------------------------ Tacos Menu------------------------------>
+
+    <div class="menu" id="menu_tacos" style="display: 'none';">
+
+      <div class="single-menu">
+        <img src="image/tacosMixet.jpeg" alt="tacosMixet">
+        <div class="menu-content">
+          <h4>tacos Mixet <span>30 dh</span></h4>
+          <p>Tomate, Poivron rouge, Oignon, Frittes, Sauces, Poulet, Viande hache.</p>
+        </div>
+      </div>
+      <div class="single-menu">
+        <img src="image/Tacos_Poulet.jpg" alt="Tacos_Pouletr">
+        <div class="menu-content">
+          <h4>Tacos Poulet <span>25 dh</span></h4>
+          <p> Tomate, Poivron rouge, Oignon, Frittes, Sauces, Poulet.</p>
+        </div>
+      </div>
+      <div class="single-menu">
+        <img src="image/Tacos_Viande_Hachee.jpg" alt="Tacos_Viande_Hachee" id="tvhimg">
+        <div class="menu-content">
+          <h4>Tacos Viande Hachee<span>25 dh</span></h4>
+          <p>Tomate, Poivron rouge, Oignon, Frittes, Sauces, Viande hache.</p>
+        </div>
+      </div>
+      <div class="single-menu">
+        <img src="image/tacosfruitdemer.webp" alt="tacosfruitdemer">
+        <div class="menu-content">
+          <h4>tacos fruit de mer <span>35 dh</span></h4>
+          <p>Tomate, Poivron rouge, Oignon, Frittes, Sauces, Crevettes, Calamars.</p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------ Burger Mneu ------------------------------>
+
+    <div class="menu" id="menu_burger">
+
+      <div class="single-menu">
+        <img src="image/big-humberger.jpg" alt="big-humberger">
+        <div class="menu-content">
+          <h4>big humberger <span>40 dh</span></h4>
+          <p>Viande hache, Oignon confit, Champignon, Cheddar, Mozzarella .</p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/Crispy Chicken Burger.jpg" alt="Chicken Burger">
+        <div class="menu-content">
+          <h4>Chicken Burger <span>23 dh</span></h4>
+          <p>Poulet grillr, Salade vert, Tomate, Oignon, Mayonnaise, Caramelise, Cheddar.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!------------------------------ Panini Menu------------------------------>
+
+    <div class="menu" id="menu_panini">
+
+      <div class="single-menu">
+        <img src="image/panini-poulet.jpeg" alt="Pizza4Fromages">
+        <div class="menu-content">
+          <h4>Panini Poulet <span>15 dh</span></h4>
+          <p> Tomates, Oignons, Mozzarella, Soupe de crème fraîche, Escalopes de Poulet. </p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/panini-viandehache.webp" alt="Pizza Fruit de Mer">
+        <div class="menu-content">
+          <h4>Panini Viande Hache <span>17 dh</span></h4>
+          <p>Tomates, Oignons, Mozzarella, Soupe de crème fraîche, Vinade Hachee.</p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/paniniCrevettes.jpg" alt="pizza vegetarienne">
+        <div class="menu-content">
+          <h4>Panini Crevettes<span>22 dh</span></h4>
+          <p>Tomates, Oignons, Mozzarella, Soupe de crème fraîche, Crevettes décortiquées.</p>
+        </div>
+      </div>
+      <div class="single-menu">
+        <img src="image/paninis-nugettes.jpg" alt="pizza-royale">
+        <div class="menu-content">
+          <h4>Panini Nugettes <span>22 dh</span></h4>
+          <p>Tomates, Oignons, Mozzarella, Soupe de crème fraîche, Nugettes .</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!------------------------------ Pasticcio Menu------------------------------>
+
+    <div class="menu" id="menu_pasticcio">
+
+      <div class="single-menu">
+        <img src="image/pasticcio-poulet.jpg" alt="Pizza4Fromages">
+        <div class="menu-content">
+          <h4>Pasticcio Poulet<span>20 dh</span></h4>
+          <p> Macaronis, Oignon, Vin blanc, Tomates, Mozzarella, Feuilles de basilic, Escalopes de Poulet. </p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/pasticcio-poulet.jpg" alt="Pizza Fruit de Mer">
+        <div class="menu-content">
+          <h4>Pasticcio Viande Hache <span>20 dh</span></h4>
+          <p>Macaronis, Oignon, Vin blanc, Tomates, Mozzarella, Feuilles de basilic, Vinade Hachee.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!------------------------------ Salade Menu------------------------------>
+
+    <div class="menu" id="menu_salade">
+
+      <div class="single-menu">
+        <img src="image/salade-mexicaine.jpg" alt="Salade Mexicaine">
+        <div class="menu-content">
+          <h4>Salade Mexicaine <span>20 dh</span></h4>
+          <p> Riz, Poivron vert et rouge, Haricots rouge, Mais, Thon, Olive.</p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/Salade-variee.jpg" alt="Salade Variee">
+        <div class="menu-content">
+          <h4>Salade Variee <span>25 dh</span></h4>
+          <p>Carottes, Pomme de terre, Betterave, Concombrenriz, Oeuf, Thon, Tomate.</p>
+        </div>
+      </div>
+
+      <div class="single-menu">
+        <img src="image/salade-pecheur.jpeg" alt="Salade Pecheur">
+        <div class="menu-content">
+          <h4>Salade Pecheur<span>35 dh</span></h4>
+          <p>Crevettes, Calamars, Surimi, Champignon, Laite coeur de plamier, Cornichon, Avocat, Mais .</p>
+        </div>
+      </div>
+      <div class="single-menu">
+        <img src="image/salade-fraicheur.jpg" alt="Salade Fraicheur">
+        <div class="menu-content">
+          <h4>Salade Fraicheur <span>35 dh</span></h4>
+          <p>Tomate cerise, Carotte, Haricot vert, Brocolis, Concombre, Nectarine, Pomme, Poire, Annas, Romaine.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!------------------------Footer--------------------->
+
+  <footer id="footer">
+    <h1 align="center">MC SHERIF<br>Fast food</h1>
+    <div class="menu">
+      <a href="">Home</a><a href="">Horaires de travail</a><a href="">Projects</a>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/Snack.McSherif"> <img src="./icon-facebook.svg" alt=""></a>
+      <a href="https://www.instagram.com/snack.mcsherif/"> <img src="./icon-instagram.svg" alt=""></a>
+    </div>
+    <p align="center" class="copyright"><br>COPYRIGHT©2021 MC Shérif</p>
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
