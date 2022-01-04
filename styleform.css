@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.link {
+  color: white;
+  font-size: 1.5rem;
+}
+
+body {
+  background-image: url(./Pictures/Background/Black\ pattern.jpg);
+  font-family: Trebuchet MS;
+
+}
+
+
+
+
+
+/* ................................nav................. */
+
+  .container {   /**/
+    width: 50px;  /**/
+    width: 90%;  /**/
+    padding: 20px;  /**/
+    box-shadow: 0px 0px 20px #00000020; /**/
+    background-color: #7d7e86;    /**/
+    margin:5vw;
+    border-radius:10px ;
+  }
+
+  .Form input {  
+    border: 1.5px solid rgba(128, 128, 128, 0.418);  
+    padding: 5px 10px 5px 50px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 7px;  /*Ta9wwos ta3 lcorners*/
+  }
+
+  
+  button.confirmer {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: #eb6816;
+    font-size: 18px;
+    cursor: pointer;  /*La souris*/
+    border-radius: 4px; 
+    width:100%;
+    transition: all .2s ease-in-out;
+  }
+  button.confirmer:hover {
+    background-color: #b34e0f;
+    color: white;
+  }
+  
+/* ......................footer.................. */
+
+
+
+
+/* icons  */
+.icons{
+  transform: translateX(39px);
+}
+
+.pizza {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 2px solid black;
+  margin :  2rem 0;
+}
+.benom{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+
+}
+.sous {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 1rem;
+}

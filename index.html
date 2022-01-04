@@ -2,101 +2,195 @@
 <html>
 
 <head>
-  <!--<a id="home"> <img src="Mc_sherif_380X90-1.png" class="brand-logo" alt="" width="1330" height="420" align="center" > </a>-->
-  <link rel="stylesheet" href="style.css" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MC Sherif</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Sherif</title>
+    <link rel="icon" href="./Pictures/Logo/Sherificon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Comforter+Brush&family=Dancing+Script:wght@640&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.css">
 
 </head>
 
 <body>
-  <nav>
 
-    <div class="logo">
-      <img src="./Sherif.png" alt="logo">
+
+    <!--<button class="me" onclick="me();" style="position: fixed;top:2rem;left: 2rem;z-index: 1000000000000000000;">where ma
+    I</button>-->
+
+
+
+    <script src='./scriptindex.js'></script>
+    <nav class="header">
+
+        <div class="logo">
+            <a href="index.html"> <img src="./Pictures/Logo/Sherif.png" alt=""></a>
+        </div>
+        <table cellspacing="30" align="center">
+            <tr>
+                <th class="link-item"><a href="index.html" class="link">Home</a></th>
+                <th class="link-item"><a href="Menu.html" class="link">Menu</a></th>
+                <th class="link-item"><a href="A propos.html" class="link">A propos</a></th>
+            </tr>
+        </table>
+        <table cellspacing="20" align="right">
+            <tr>
+                <td class="user">
+                    <a href="Form.html"><i class="fad fa-shopping-bag"></i></a>
+                </td>
+            </tr>
+        </table>
+
+    </nav>
+
+    <div class="main-slide">
+        <main id="carousel-container">
+            <ul id="carousel">
+                <li class="slide" id="img1">
+                    <img src="" />
+                    <h2>Bienvenue chez MC Sherif</h2>
+
+                </li>
+                <li class="slide" id="img2">
+                    <img src="" />
+                </li>
+                <li class="slide" id="img3">
+                    <img src="" />
+                </li>
+            </ul>
+        </main>
+        <nav>
+            <a href="#img1"></a>
+            <a href="#img2"></a>
+            <a href="#img3"></a>
+        </nav>
     </div>
-    <table cellspacing="30" align="center">
-      <tr>
-        <th class="link-item"><a href="#home" class="link">Home</a></th>
-        <th class="link-item"><a href="Menu.html" class="link">Menu</a></th>
-        <th class="link-item"><a href="#footer" class="link">contact</a></th>
-        <th class="link-item"><a href="#propose" class="link">A propos</a></th>
-      </tr>
-    </table>
-    <table cellspacing="10" align="right">
-      <tr>
-        <td> 
-          <div class="search">
-           <input type="text" class="search-box" placeholder="search food, drinks">
-           <button class="search-btn" style=background-color:#a9a9a9>search</button>
-          </div>
-        </td>
-
-        <td> <a href="#"><img src="Black icon account.png" alt="user" width="30" height="30"></a></td>
-
-        <td> <a href="#"><img src="Black icon shopping.png" alt="cart" width="30" height="30"></a></td>
-      </tr>
-    </table>
-
-  </nav>
-  <div class="content">
 
 
-    <div class="pack pack1">
-      <div class="text">
-        <h1>Pack gold</h1>
-        <p>Humberger + 2 coca cola + tacos + frits</p>
-      </div>
-      <img src="https://www.fastpizza91.fr/produit/1753_271.png" class="left" />
-    </div>
+    <div class="content">
+        <h1 class="Qui"><br><b>Qui pourraient vous plaire</b></h1>
+        <div class="pack pack1">
+            <div class="plaire PizzaNutella">
+                <h1>Pizza Nutella</h1>
+                <p>Nutella, banane, noix de coco</p>
+            </div>
+            <img src="./Pictures/Qui pourraient vous plaire/Pizza Nutella.png" class="left " id="image1" />
+        </div>
 
-    <div class="pack pack2">
+        <div class="pack pack2">
 
-      <img src="https://api.helpyfood.com/families/e816af6368521cfc5fc0b394f2710185.png.webp" class="right" />
-      <div class="text">
-        <h1>Pack gold</h1>
-        <p>Humberger + 2 coca cola + tacos + frits</p>
-      </div>
-    </div>
+            <img src="./Pictures/Qui pourraient vous plaire/Tacos VH.png" class="right  image2" id="" />
+            <div class="plaire TacosVH">
+                <h1>Tacos Viande Hachée XL</h1>
+                <p>3 Viandes au choix</p>
+            </div>
+        </div>
 
-    <div class="pack pack3">
-      <div class="text">
-        <h1>Pack gold</h1>
-        <p>Humberger + 2 coca cola + tacos + frits</p>
-      </div>
-      <img src="https://api.helpyfood.com/families/e816af6368521cfc5fc0b394f2710185.png.webp" class="left" />
+        <div class="pack pack3">
+            <div class="plaire SaladePecheur">
+                <h1>Salade Pecheur</h1>
+                <p>Salade, tomates, avocat, crevettes, olives + Pain offert</p>
+            </div>
+            <img src="./Pictures/Qui pourraient vous plaire/Salade pecheur.png" class="left" id="image3" />
+        </div>
+        <div class="pack pack4">
+
+            <img src="./Pictures/Qui pourraient vous plaire/Panini VH.png" class="right" id="image4" />
+            <div class="plaire PaniniVH">
+                <h1>Panini Viande Hachée</h1>
+                <p>Panini viande hachée+ Frites</p>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="loc">
-      <p><iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.23035049473!2d-8.018247884846067!3d31.654917081325333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafed775c983bd3%3A0x504f3674e6e7b1a3!2sMc.sherif!5e0!3m2!1sfr!2sma!4v1637752823456!5m2!1sfr!2sma"
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" align="center"></iframe></p>
+        <div class="leftdor">
+
+        </div>
+        <div class="rightdor"></div>
+        <p><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.23035049473!2d-8.018247884846067!3d31.654917081325333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafed775c983bd3%3A0x504f3674e6e7b1a3!2sMc.sherif!5e0!3m2!1sfr!2sma!4v1637752823456!5m2!1sfr!2sma"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" align="center"></iframe>
+        </p>
 
     </div>
+    <footer id="footer">
+        <h1 align="center">MC SHERIF<br>Fast food<br></h1>
+        <br>
+        <div class="f_title">
+            <a href="index.html">Home</a>
+            <a class="H_travail">Horaires de travail </a>
+            <a href="mailto:MCsherif.contact@gmail.com">Besoin d'aide?</a>
+        </div>
+        <div class="H_travail"><a>09:00h-23:00h </a></div>
+        <div class="social">
+            <div class="fb"> <a href="https://www.facebook.com/Snack.McSherif">
+                    <i class="fab fa-facebook"></i>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/snack.mcsherif/">
+                    <i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
 
-    <h1 id="propose">A PROPOS DE NOUS</h1>
-    <p>MC Shérif est un snack Restaurent qui se trouve au Marrakech dans quartier Sidi-Aabbad.Nos produites sont de
-      bonnes
-      qualité et bien sur délicieux.</p>
-
-
-  </div>
-
-
-  <footer id="footer">
-    <footer>
-      <h1 align="center">MC SHERIF<br>Fast food</h1>
-      <div class="menu">
-        <a href="index.html">Home</a><a href="">Horaires de travail</a><a href="">Help</a>
-      </div>
-      <div class="social">
-        <a href="https://www.facebook.com/Snack.McSherif"> <img src="./icon-facebook.svg" alt=""></a>
-        <a href="https://www.instagram.com/snack.mcsherif/"> <img src="./icon-instagram.svg" alt=""></a>
-      </div>
-      <p align="center" class="copyright"><br>COPYRIGHT©2021 MC Shérif</p>
+        <p align="center" class="simple" id="copyright"><br>COPYRIGHT©2021 MC Shérif</p>
     </footer>
+
+    <!----------------------coockes-------------------------->
+
+    <div class="cookie-container">
+        <p>
+            Nous utilisons des cookies sur ce site pour vous offrir la meilleure expérience sur notre
+             site et vous montrer des annonces pertinentes. Pour en savoir plus, lisez notre
+            <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+        </p>
+
+        <button class="cookie-btn">
+            Ok
+        </button>
+    </div>
+    <script src="main.js"></script>
+
+    <!---------------------- End coockes -------------------------->
+    
+    <script type="text/javascript">
+        function me() {
+            alert('Current scroll from the top: ' + window.pageYOffset);
+        }
+
+
+
+        window.addEventListener('scroll', function () {
+
+            var scroll = document.querySelector('.pack1');
+            scroll.classList.toggle("active", window.scrollY > 500)
+
+            var scroll = document.querySelector('.pack2');
+            scroll.classList.toggle("active2", window.scrollY > 1000)
+
+            var scroll = document.querySelector('.pack3');
+            scroll.classList.toggle("active3", window.scrollY > 1500)
+
+            var scroll = document.querySelector('.pack4');
+            scroll.classList.toggle("active4", window.scrollY > 2000)
+
+            var scroll = document.querySelector('.leftdor');
+            scroll.classList.toggle("leftactive", window.scrollY > 2530)
+
+            var scroll = document.querySelector('.rightdor');
+            scroll.classList.toggle("rightactive", window.scrollY > 2530)
+
+
+        })
+    </script>
 
 </body>
 

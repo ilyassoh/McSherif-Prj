@@ -1,0 +1,86 @@
+<head>
+  <title>Form</title>
+  <link rel="icon" href="Sherif.png">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <link rel="stylesheet" href="styleform.css">
+  <section>
+    <div class="container">
+      <img class="image" src="user.png" alt="user">
+      <form action="traitement.php" method="POST" id="myForm">
+        <div class="Form">
+          <div class="Nom">
+            <label for="Nom">Nom</label>
+            <input type="text" id="Nom" name="Nom">
+            <br>
+            <span id="NomError"></span>
+          </div>
+          <div class="Adresse">
+            <label for="Adresse">Adresse</label>
+            <input type="text" id="Adresse" name="Adresse">
+            <br>
+            <span id="AdresseError"></span>
+          </div>
+          <div class="Nphone">
+            <label for="Nphone">Numéro de téléphone</label>
+            <input type="text" id="Nphone" name="Nphone">
+            <br>
+            <span id="PhoneError"></span>
+          </div>
+          <br>
+          <button type="submit" class="submit">Confirmer</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script>
+    let myForm = document.getElementById('myForm');
+
+    myForm.addEventListener('submit', function (e) {
+      let myRegex = /^[a-zA-Z-\s]+$/;
+      let myNumber = /^[0-9+-]+$/;
+      /*    Nom    */
+      let myNom = document.getElementById('Nom');
+      if (myNom.value.trim() == "") {
+        let myError = document.getElementById('NomError');
+        myError.innerHTML = "Le champs Nom est vide!";
+        myError.style.color = 'red';
+        e.preventDefault();
+      } else if (myRegex.test(myNom.value) == false) {
+        let myError = document.getElementById('NomError');
+        myError.innerHTML = "Le Nom doit comporter des lettres, des tirets uniquement";
+        myError.style.color = 'red';
+        e.preventDefault();
+      }
+      /*    Adresse    */
+      let myAdresse = document.getElementById('Adresse');
+      if (myAdresse.value.trim() == "") {
+        let myError = document.getElementById('AdresseError');
+        myError.innerHTML = "Le champs Adresse est vide!";
+        myError.style.color = 'red';
+        e.preventDefault();
+      }
+      /*    Numero de telephone    */
+      let myPhone = document.getElementById('Nphone');
+      if (myPhone.value.trim() == "") {
+        let myError = document.getElementById('PhoneError');
+        myError.innerHTML = "Le champs Numéro du telephone est vide!";
+        myError.style.color = 'red';
+        e.preventDefault();
+      } else if (myNumber.test(myPhone.value) == false) {
+        let myError = document.getElementById('PhoneError');
+        myError.innerHTML = "Le Numéro de telephone doit comporter des nombres uniquement";
+        myError.style.color = 'red';
+        e.preventDefault();
+      }
+
+    });
+
+
+  </script>
+
+
+
+</body>

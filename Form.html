@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Form</title>
+  <link rel="icon" href="./Pictures/Logo/Sherificon.png">
+  <meta charset="utf-8">
+  <script src="Form.js"> </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="png/css/all.css">
+  <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="styleform.css">
+  <nav class="header">
+
+    <div class="logo">
+      <a href="index.html"> <img src="./Pictures/Logo/Sherif.png" alt="MC Shérif"></a>
+    </div>
+    <table cellspacing="30" align="center">
+      <tr>
+        <th class="link-item"><a href="index.html" class="link">Home</a></th>
+        <th class="link-item"><a href="Menu.html" class="link">Menu</a></th>
+        <th class="link-item"><a href="A propos.html" class="link">A propos</a></th>
+      </tr>
+    </table>
+    <table cellspacing="20" align="right">
+      <tr>
+        <td class="user">
+          <a href="Form.html"><i class="fad fa-shopping-bag"></i></a>
+        </td>
+      </tr>
+    </table>
+
+  </nav>
+  <section>
+    <div class="container">
+      <form action="Merci.html" method="POST" id="myForm">
+        <div class="Form">
+          <div class="Nom">
+            <i class="fas fa-signature icons"></i>
+            <input type="text" id="Nom" name="Nom" placeholder="Votre nom">
+            <br>
+            <span id="NomError"></span>
+          </div>
+          <div class="Adresse">
+            <i class="fal fa-location icons" aria-hidden="true"></i>
+            <input type="text" id="Adresse" name="Adresse" placeholder="Où habitez vous?">
+            <br>
+            <span id="AdresseError"></span>
+          </div>
+          <div class="Nphone">
+            <i class="fal fa-phone-volume icons"></i>
+            <input type="text" id="Nphone" name="Nphone" placeholder="Votre numéro de téléphone">
+            <br>
+            <span id="PhoneError"></span>
+          </div>
+
+          <div><br> Vos Choix :<br>
+
+            <!------------------------------ Pizza Menu------------------------------>
+
+
+            <div class="pizza">
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Pizza1" id="Pizza1" /> <label for="Pizza1">Pizza 4 Fromages</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Pizza1" id="Pizza1" /><label for="Pizza1">Pizza Fruits de Mer</label>
+                </div>
+              </div>
+
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Pizza2" id="Pizza2" /><label for="Pizza2">Pizza Vegetarienne</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Pizza2" id="Pizza" /> <label for="Pizza2">Pizza Royale</label>
+                </div>
+              </div>
+
+
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Pizza3" id="Pizza" /><label for="Pizza3">Pizza Nutella</label>
+                </div>
+                <div class="sous">
+                </div>
+              </div>
+            </div>
+            <!------------------------------ Tacos Menu------------------------------>
+
+
+
+            <div class="pizza">
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Tacos1" id="Tacos1" /> <label for="Tacos1">Tacos Mixet</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Tacos1" id="Tacos1" /><label for="Tacos1">Tacos Poulet</label>
+                </div>
+              </div>
+
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Tacos2" id="Tacos2" /><label for="Tacos2">Tacos Viande Hachée XL</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Tacos2" id="Tacos2" /> <label for="Tacos2">Tacos Fruit De Mer</label>
+                </div>
+              </div>
+            </div>
+            <!------------------------------ Burger Menu ------------------------------>
+
+
+            <div class="pizza">
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Burger1" id="Burger1" /> <label for="Burger1">Big Humburger</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Burger2" id="Burger2" /><label for="Burger2">Chicken Humburger</label>
+                </div>
+              </div>
+            </div>
+            <!------------------------------ Panini Menu------------------------------>
+            <div class="pizza">
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Panini1" id="Panini1" /> <label for="Panini1">Panini Poulet</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Panini1" id="Panini1" /><label for="Panini1">Panini Viande Hachée</label>
+                </div>
+              </div>
+
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Panini2" id="Panini2" /><label for="Pnini2">Panini Crevettes</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Panini2" id="Panini2" /> <label for="Panini2">Panini Nugettes</label>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!------------------------------ Pasticcio Menu------------------------------>
+            <div class="pizza">
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Pasticcio" id="Pasticcio" /><label for="Pasticcio">Pasticcio
+                    Poulet</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Pasticcio" id="Pasticcio" /> <label for="Pasticcio">Pasticcio Viande
+                    Hachée</label>
+                </div>
+              </div>
+            </div>
+            <!------------------------------ Salade Menu------------------------------>
+            <div class="pizza">
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Salade1" id="Salade1" /><label for="Salade1">Salade Mexicaine</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Salade1" id="Salade1" /> <label for="Salade1">Salade Variée</label>
+                </div>
+              </div>
+              <div class="benom">
+                <div class="sous">
+                  <input type="checkbox" name="Salade2" id="Salade2" /><label for="Salade2">Salade Fraicheur</label>
+                </div>
+                <div class="sous">
+                  <input type="checkbox" name="Salade2" id="Salade2" /> <label for="Salade2">Salade Pecheur </label>
+                </div>
+              </div>
+            </div>
+            <!---------------------------------------BUTTONS--------------------------------------->
+            <button type="submit" class="confirmer">Confirmer</button>
+          </div>
+      </form>
+    </div>
+  </section>
+  <script>
+    let myForm = document.getElementById('myForm');
+
+    myForm.addEventListener('submit', function (e) {
+      let myRegex = /^[a-zA-Z-\s]+$/;
+      let myNumber = /^[0-9+-]+$/;
+      /*    Nom    */
+      let myNom = document.getElementById('Nom');
+      if (myNom.value.trim() == "") {
+        let myError = document.getElementById('NomError');
+        myError.innerHTML = "Le champs Nom est vide!";
+        myError.style.color = 'red';
+        e.preventDefault();
+      } else if (myRegex.test(myNom.value) == false) {
+        let myError = document.getElementById('NomError');
+        myError.innerHTML = "Le Nom doit comporter des lettres, des tirets uniquement";
+        myError.style.color = 'red';
+        e.preventDefault();
+      }
+      /*    Adresse    */
+      let myAdresse = document.getElementById('Adresse');
+      if (myAdresse.value.trim() == "") {
+        let myError = document.getElementById('AdresseError');
+        myError.innerHTML = "Le champs Adresse est vide!";
+        myError.style.color = 'red';
+        e.preventDefault();
+      }
+      /*    Numero de telephone    */
+      let myPhone = document.getElementById('Nphone');
+      if (myPhone.value.trim() == "") {
+        let myError = document.getElementById('PhoneError');
+        myError.innerHTML = "Le champs Numéro du telephone est vide!";
+        myError.style.color = 'red';
+        e.preventDefault();
+      } else if (myNumber.test(myPhone.value) == false) {
+        let myError = document.getElementById('PhoneError');
+        myError.innerHTML = "Le Numéro de telephone doit comporter des nombres uniquement";
+        myError.style.color = 'red';
+        e.preventDefault();
+      }
+
+    });
+  </script>
+
+  <footer id="footer">
+    <footer>
+      <h1 align="center">MC SHERIF<br>Fast food</h1>
+      <div class="f_title">
+        <a href="index.html">Home</a>
+        <a class="H_travail">Horaires de travail </a>
+        <a href="Tel:0626485004">Help</a>
+      </div>
+      <div class="H_travail"><a>09:00h-23:00h </a></div>
+      <div class="social">
+        <div class="fb"> <a href="https://www.facebook.com/Snack.McSherif">
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="insta">
+          <a href="https://www.instagram.com/snack.mcsherif/">
+            <i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <p align="center" class="simple" id="copyright"><br>COPYRIGHT©2021 MC Shérif</p>
+    </footer>
+
+ 
+</body>
+
+</html>

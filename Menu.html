@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link rel="icon" href="./Pictures/Logo/Sherificon.png">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="Menu_Style.css">
-  <link rel="stylesheet" href="png/css/all.css">
+  <link rel="stylesheet" href="css/all.css">
 
   <script src="menu.js"> </script>
 
@@ -15,27 +17,24 @@
 
 <body>
 
-  <nav>
+  <script src='./scriptindex.js'></script>
+  <nav class="header">
+
     <div class="logo">
-      <img src="./Sherif.png" alt="logo">
+      <a href="index.html"> <img src="./Pictures/Logo/Sherif.png" alt=""></a>
     </div>
     <table cellspacing="30" align="center">
       <tr>
-        <th class="link-item"><a href="#home" class="link">Home</a></th>
+        <th class="link-item"><a href="index.html" class="link">Home</a></th>
         <th class="link-item"><a href="Menu.html" class="link">Menu</a></th>
-        <th class="link-item"><a href="#footer" class="link">contact</a></th>
-        <th class="link-item"><a href="#propose" class="link">A propos</a></th>
+        <th class="link-item"><a href="A propos.html" class="link">A propos</a></th>
       </tr>
     </table>
-    <table cellspacing="10" align="right">
+    <table cellspacing="20" align="right">
       <tr>
-        <td> <input type="text" class="search-box" placeholder="search brand, product">
-          <button class="search-btn" style=background-color:#a9a9a9>search</button>
+        <td class="user">
+          <a href="Form.html"><i class="fad fa-shopping-bag"></i></a>
         </td>
-
-        <td> <a href="#"><img src="Black icon account.png" alt="user" width="30" height="30"></a></td>
-
-        <td> <a href="#"><img src="Black icon shopping.png" alt="cart" width="30" height="30"></a></td>
       </tr>
     </table>
 
@@ -256,23 +255,26 @@
 
   <!------------------------Footer--------------------->
 
-  <footer id="footer">
-    <h1 align="center">MC SHERIF<br>Fast food</h1>
-    <div class="menu">
-      <a href="">Home</a><a href="">Horaires de travail</a><a href="">Projects</a>
+  <footer  id="footer" >
+    <h1 align="center">MC SHERIF<br>Fast food<br></h1>
+    <br><div class="f_title">
+        <a href="index.html">Home</a>
+        <a class="H_travail">Horaires de travail </a>
+        <a href="mailto:MCsherif.contact@gmail.com">Besoin d'aide?</a>
     </div>
+    <div class="H_travail"><a >09:00h-23:00h </a></div>
     <div class="social">
-      <a href="https://www.facebook.com/Snack.McSherif"> <img src="./icon-facebook.svg" alt=""></a>
-      <a href="https://www.instagram.com/snack.mcsherif/"> <img src="./icon-instagram.svg" alt=""></a>
+        <div class="fb"> <a href="https://www.facebook.com/Snack.McSherif">
+                <i class="fab fa-facebook"></i>
+        </div>
+        <div class="insta">
+            <a href="https://www.instagram.com/snack.mcsherif/">
+                <i class="fab fa-instagram"></i></a>
+        </div>
     </div>
-    <p align="center" class="copyright"><br>COPYRIGHT©2021 MC Shérif</p>
-  </footer>
 
-
-
-
-
-
+    <p align="center" class="simple" id="copyright"><br>COPYRIGHT©2021 MC Shérif</p>
+</footer>
 
 </body>
 
