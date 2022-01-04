@@ -23,8 +23,8 @@ body{
   /*------------------------- Food Menu ------------------------*/
   
 .wrapper{
-  width: 80vw;
-  margin:100px auto;
+  width: 90vw;
+  margin:5vw;
 }
 .title{
   text-align:center;
